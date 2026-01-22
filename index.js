@@ -5,3 +5,6 @@ import "./styles.css";
 
 const root = createRoot(document.getElementById("root"));
 root.render(<App />);
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
